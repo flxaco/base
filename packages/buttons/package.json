@@ -1,5 +1,5 @@
 {
-  "name": "@flxaco-base/buttons",
+  "name": "@flxaco/buttons",
   "version": "0.0.3",
   "description": "buttons component",
   "repository": {
@@ -25,7 +25,7 @@
     "prepare": "rm -rf ./dist && npm run build"
   },
   "dependencies": {
-    "@flxaco-base/constants": "^0.0.1"
+    "@flxaco/constants": "^0.0.1"
   },
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "publishConfig": {

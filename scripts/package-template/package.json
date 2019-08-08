@@ -1,5 +1,5 @@
 {
-  "name": "@flxaco-base/PACKAGE_NAME",
+  "name": "@flxaco/PACKAGE_NAME",
   "version": "0.0.0",
   "description": "PACKAGE_NAME component",
   "repository": {
@@ -16,7 +16,7 @@
     "src/*"
   ],
   "eyeglass": {
-    "name": "mixtape-PACKAGE_NAME",
+    "name": "flxaco-PACKAGE_NAME",
     "sassDir": "./",
     "needs": "*",
     "exports": false
@@ -28,7 +28,7 @@
     "prepare": "rm -rf ./dist && npm run build"
   },
   "dependencies": {
-    "@flxaco-base/constants": "^1.0.3"
+    "@flxaco/constants": "^1.0.3"
   },
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "publishConfig": {

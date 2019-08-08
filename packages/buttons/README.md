@@ -1,4 +1,4 @@
-# @flxaco-base/buttons
+# @flxaco/buttons
 
 Multiple button styles and sizes.
 
@@ -7,14 +7,14 @@ Multiple button styles and sizes.
 ### Installation
 
 ```
-npm install @flxaco-base/buttons --save-dev
+npm install @flxaco/buttons --save-dev
 ```
 
 ### How to use
 
 **CSS**
 
-- PostCSS workflow: `@import '@flxaco-base/buttons';`
+- PostCSS workflow: `@import '@flxaco/buttons';`
 - Sass/Eyeglass: `@import 'mixtape-buttons';`
 - Native CSS: `@import url('dist/buttons.css');`
 - Link tag: `<link href="dist/buttons.css" rel="stylesheet" type="text/css">`
@@ -24,17 +24,17 @@ npm install @flxaco-base/buttons --save-dev
 To use with default values:
 
 ```css
-@import "@flxaco-base/buttons";
+@import "@flxaco/buttons";
 ```
 
 To override variables in a project:
 
 ```css
-@import "@flxaco-base/constants";
+@import "@flxaco/constants";
 
 @import "path/to/local/project/vars.css";
 
-@import "@flxaco-base/buttons/src/_buttons.css";
+@import "@flxaco/buttons/src/_buttons.css";
 
 .button {
   /* Overrides */
