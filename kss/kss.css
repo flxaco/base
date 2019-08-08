@@ -5,17 +5,7 @@
 @import "../packages/constants/src/constants.css";
 @import "../packages/base/src/_fonts.css";
 @import "../packages/base";
-@import "../packages/layout";
-@import "../packages/accordion";
 @import "../packages/buttons";
-@import "../packages/icon";
-@import "../packages/form";
-@import "../packages/global";
-@import "../packages/navigation";
-@import "../packages/page";
-@import "../packages/tiles";
-@import "../packages/previous-next";
-@import "../packages/pagination";
 
 /*
  * KSS only styles
@@ -77,6 +67,18 @@
 #kssref-elements-buttons-reverse .kss-section__example,
 #kssref-elements-buttons-white .kss-section__example {
   background-color: var(--grey-75);
+}
+
+#kssref-example-elements-buttons-white {
+  & .kss-style {
+    color: var(--white);
+  }
+}
+
+#kssref-example-elements-buttons-reverse {
+  & .kss-style {
+    color: var(--white);
+  }
 }
 
 #kssref-example-elements-buttons-icon .kss-example > div {

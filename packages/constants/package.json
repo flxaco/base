@@ -1,12 +1,12 @@
 {
   "name": "@pnx-mixtape/constants",
-  "version": "1.0.4",
+  "version": "0.0.1",
   "description": "constants component",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/previousnext/mixtape/tree/master/packages/constants"
+    "url": "git+https://github.com/flxaco/base/tree/master/packages/constants"
   },
-  "author": "PreviousNext <info@previousnext.com.au>",
+  "author": "Nick Fletcher <hi@flxa.co>",
   "license": "MIT",
   "style": "src/constants.css",
   "files": [
@@ -14,7 +14,7 @@
     "src/*"
   ],
   "eyeglass": {
-    "name": "mixtape-constants",
+    "name": "flxaco-constants",
     "sassDir": "./",
     "needs": "*",
     "exports": false

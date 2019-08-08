@@ -1,12 +1,12 @@
 {
-  "name": "@pnx-mixtape/base",
-  "version": "1.3.8",
+  "name": "@flxaco-base/base",
+  "version": "0.0.1",
   "description": "Base styles and variables",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/previousnext/mixtape/tree/master/packages/base"
+    "url": "git+https://github.com/flxaco/base/tree/master/packages/base"
   },
-  "author": "PreviousNext <info@previousnext.com.au>",
+  "author": "Nick Fletcher <hi@flxa.co>",
   "license": "MIT",
   "style": "src/base.css",
   "files": [
@@ -14,7 +14,7 @@
     "src/*"
   ],
   "eyeglass": {
-    "name": "mixtape-base",
+    "name": "flxaco-base",
     "sassDir": "./",
     "needs": "*",
     "exports": false
@@ -25,7 +25,7 @@
     "prepare": "rm -rf ./dist && npm run build"
   },
   "dependencies": {
-    "@pnx-mixtape/constants": "^1.0.4"
+    "@flxaco-base/constants": "^0.0.1"
   },
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "publishConfig": {

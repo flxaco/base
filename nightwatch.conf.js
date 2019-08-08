@@ -6,9 +6,7 @@ module.exports = {
   test_settings: {
     default: {
       filter: '**/tests/*Test.js',
-      exclude: [
-        './accordion/node_modules',
-      ],
+      exclude: [],
       launch_url: 'http://127.0.0.1:3000',
       selenium_host: '127.0.0.1',
       selenium_port: '4444',

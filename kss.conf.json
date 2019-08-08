@@ -1,18 +1,8 @@
 {
   "source": [
     "kss",
-    "packages/accordion/src",
     "packages/base/src",
-    "packages/buttons/src",
-    "packages/layout/src",
-    "packages/icon/src",
-    "packages/form/src",
-    "packages/global/src",
-    "packages/navigation/src",
-    "packages/page/src",
-    "packages/tiles/src",
-    "packages/previous-next/src",
-    "packages/pagination/src"
+    "packages/buttons/src"
   ],
   "destination": "dist",
   "builder": "node_modules/pnx-mixtape-coverart",

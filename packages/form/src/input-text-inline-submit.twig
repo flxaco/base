@@ -1,9 +1,0 @@
-{% set id = random() %}
-<div class="form__item">
-  <label for="input{{ id }}">Input text field</label>
-  <span class="input__text--inline icon--search">
-    <input type="text" id="input{{ id }}" aria-describedby="input{{ id }}Help" class="{{ modifier_class }}">
-    <input class="button button--primary" type="submit" value="Search"/>
-  </span>
-  <div class="form__description" id="input{{ id }}Help" role="tooltip">Help text that provides additional information about the field.</div>
-</div>

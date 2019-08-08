@@ -1,9 +1,0 @@
-:root {
-  --border-color: var(--grey-10);
-  --bg-color: var(--brand-reverse);
-  --title-color: var(--grey-75);
-  --page-title-color: var(--black);
-  --active-color: var(--brand-reverse);
-  --active-bg: var(--black);
-  --active-title-color: var(--grey-05);
-}
