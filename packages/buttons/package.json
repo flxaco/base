@@ -25,11 +25,11 @@
     "prepare": "rm -rf ./dist && npm run build"
   },
   "dependencies": {
-    "@flxaco/constants": "^0"
+    "@flxaco/constants": "^0.0"
   },
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "6ae516f59cf15491be4a61a6d16d41696053dfee"
+  "gitHead": "1ba098e2ff8df3971802ad2205a64a0ad35fe106"
 }
