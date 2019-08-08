@@ -1,0 +1,204 @@
+/**
+ * Icon
+ *
+ * .icon--arrow-down - Arrow Down
+ * .icon--arrow-left - Arrow Left
+ * .icon--arrow-up - Arrow Up
+ * .icon--arrow-right - Arrow Right
+ * .icon--attachment - Attachment
+ * .icon--bookmark-add - Bookmark Add
+ * .icon--bookmark-remove - Bookmark Remove
+ * .icon--bookmark - Bookmark
+ * .icon--building - Building
+ * .icon--camera - Camera
+ * .icon--chevron-down - Chevron Down
+ * .icon--chevron-left - Chevron Left
+ * .icon--chevron-right - Chevron Right
+ * .icon--chevron-up - Chevron Up
+ * .icon--clock - Clock
+ * .icon--close - Close
+ * .icon--code - Code
+ * .icon--collapse - Collapse
+ * .icon--controls - Controls
+ * .icon--crosshair - Crosshair
+ * .icon--download - Download
+ * .icon--email - Email
+ * .icon--error - Error
+ * .icon--expand - Expand
+ * .icon--external-link - External Link
+ * .icon--facebook - Facebook
+ * .icon--google - Google
+ * .icon--heart-selected - Heart Selected
+ * .icon--heart-unselected - Heart Unselected
+ * .icon--hide - Hide
+ * .icon--image - Image
+ * .icon--info - Info
+ * .icon--instagram - Instagram
+ * .icon--link - Link
+ * .icon--linkedin - LinkedIn
+ * .icon--list - List
+ * .icon--lock - Lock
+ * .icon--login - Login
+ * .icon--media-next - Media Next
+ * .icon--media-pause - Media Pause
+ * .icon--media-play - Media Play
+ * .icon--media-previous - Media Previous
+ * .icon--media-rewind - Media Rewind
+ * .icon--media-skip - Media Skip
+ * .icon--media-stop - Media Stop
+ * .icon--menu - Menu
+ * .icon--more - More
+ * .icon--navigation - Navigation
+ * .icon--notification - Notification
+ * .icon--pencil - Pencil
+ * .icon--phone - Phone
+ * .icon--pin - Pin
+ * .icon--question-empty - Question Empty
+ * .icon--question-filled - Question Filled
+ * .icon--question - Question
+ * .icon--restart - Restart
+ * .icon--search - Search
+ * .icon--send - Send
+ * .icon--settings - Settings
+ * .icon--share - Share
+ * .icon--skip - Skip
+ * .icon--star-selected - Star Selected
+ * .icon--star-unselected - Star Unselected
+ * .icon--success - Success
+ * .icon--support - Support
+ * .icon--tag - Tag
+ * .icon--tick - Tick
+ * .icon--trash - Trash
+ * .icon--twitter - Twitter
+ * .icon--user - User
+ * .icon--view - View
+ * .icon--warning - Warning
+ * .icon--wechat - Wechat
+ * .icon--youtube - Youtube
+ *
+ * Default: false
+ *
+ * Markup: icon.twig
+ *
+ * Style guide: base.icon
+ */
+
+@define-mixin icon $name {
+  .icon--$(name) {
+    background-image: svg-load("images/$(name).svg", fill=var(--brand-text));
+    background-repeat: no-repeat;
+
+    &.button--primary,
+    &.button--reverse {
+      background-image: svg-load(
+        "images/$(name).svg",
+        fill=var(--brand-reverse)
+      );
+
+      &:hover {
+        background-image: svg-load(
+          "images/$(name).svg",
+          fill=var(--brand-primary)
+        );
+      }
+    }
+
+    &.button--secondary,
+    &.button--white {
+      background-image: svg-load(
+        "images/$(name).svg",
+        fill=var(--brand-primary)
+      );
+
+      &:hover {
+        background-image: svg-load(
+          "images/$(name).svg",
+          fill=var(--brand-reverse)
+        );
+      }
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: var(--spacing-s);
+  height: var(--spacing-s);
+  vertical-align: middle;
+  background-position: center;
+}
+
+@mixin icon arrow-down;
+@mixin icon arrow-left;
+@mixin icon arrow-up;
+@mixin icon arrow-right;
+@mixin icon attachment;
+@mixin icon bookmark-add;
+@mixin icon bookmark-remove;
+@mixin icon bookmark;
+@mixin icon building;
+@mixin icon camera;
+@mixin icon chevron-down;
+@mixin icon chevron-left;
+@mixin icon chevron-right;
+@mixin icon chevron-up;
+@mixin icon clock;
+@mixin icon close;
+@mixin icon code;
+@mixin icon collapse;
+@mixin icon controls;
+@mixin icon crosshair;
+@mixin icon download;
+@mixin icon email;
+@mixin icon error;
+@mixin icon expand;
+@mixin icon external-link;
+@mixin icon facebook;
+@mixin icon google;
+@mixin icon heart-selected;
+@mixin icon heart-unselected;
+@mixin icon hide;
+@mixin icon image;
+@mixin icon info;
+@mixin icon instagram;
+@mixin icon link;
+@mixin icon linkedin;
+@mixin icon list;
+@mixin icon lock;
+@mixin icon login;
+@mixin icon media-next;
+@mixin icon media-pause;
+@mixin icon media-play;
+@mixin icon media-previous;
+@mixin icon media-rewind;
+@mixin icon media-skip;
+@mixin icon media-stop;
+@mixin icon menu;
+@mixin icon more;
+@mixin icon navigation;
+@mixin icon notification;
+@mixin icon pencil;
+@mixin icon phone;
+@mixin icon pin;
+@mixin icon question-empty;
+@mixin icon question-filled;
+@mixin icon question;
+@mixin icon restart;
+@mixin icon search;
+@mixin icon send;
+@mixin icon settings;
+@mixin icon share;
+@mixin icon skip;
+@mixin icon star-selected;
+@mixin icon star-unselected;
+@mixin icon success;
+@mixin icon support;
+@mixin icon tag;
+@mixin icon tick;
+@mixin icon trash;
+@mixin icon twitter;
+@mixin icon user;
+@mixin icon view;
+@mixin icon warning;
+@mixin icon wechat;
+@mixin icon youtube;

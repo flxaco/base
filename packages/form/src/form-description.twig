@@ -1,0 +1,4 @@
+{% set id = random() %}
+<label for="input-description{{ id }}">Input text field</label>
+<input aria-describedby="input-description-help{{ id }}" id="input-description{{ id }}" type="text">
+<div class="form__description" id="input-description-help{{ id }}" role="tooltip">Help text that provides additional information about the field.</div>

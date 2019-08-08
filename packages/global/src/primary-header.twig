@@ -1,0 +1,17 @@
+<div class="global__primary section">
+  <div class="section__content">
+    {% include "logo.twig" %}
+    <div class="global__toggle">
+      <button aria-controls="global__primary__nav" class="global__toggle__menu button button--icon-only icon--menu">Open Menu</button>
+    </div>
+    <div class="global__primary__nav">
+      {% include "../../navigation/src/navigation-dropdown.twig" %}
+      <div class="global__primary__search">
+        <label for="global-search">Search</label>
+        <span class="global__primary__search__input input__text--icon icon--search">
+          <input id="global-search" type="text">
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

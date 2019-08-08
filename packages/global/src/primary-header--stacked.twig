@@ -1,0 +1,28 @@
+<div class="global__primary global__primary--stacked section">
+  <div class="section__content">
+    <div class="global__primary__logo-search">
+      {% include "logo.twig" %}
+      <div class="global__toggle">
+        <button aria-controls="global__primary__nav" class="global__toggle__menu button button--icon-only icon--menu">Open Menu</button>
+      </div>
+      <div class="global__primary__nav">
+        <div class="global__primary__search">
+          <label for="global-search">Search</label>
+          <span class="global__primary__search__input input__text--icon icon--search">
+            <input id="global-search" type="text">
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="global__primary__nav global__primary__nav-menu">
+    <div class="section__content">
+      <div class="global__primary__nav-left">
+        {% include "../../navigation/src/navigation-mega-nav.twig" %}
+      </div>
+      <div class="global__primary__nav-right">
+        <a href="#" class="button button--secondary icon--info button--right">Primary Main Link Button</a>
+      </div>
+    </div>
+  </div>
+</div>

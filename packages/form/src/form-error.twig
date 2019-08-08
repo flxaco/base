@@ -1,0 +1,6 @@
+{% set id = random() %}
+<div class="form__item">
+  <label for="input-error-{{ id }}">Input text field</label>
+  <input aria-describedby="input-error-{{ id }}Help" class="error" id="input-error-{{ id }}" type="text">
+  <div class="form__error-message" id="input-error-{{ id }}Help" role="tooltip">Help text that provides additional information about the field.</div>
+</div>

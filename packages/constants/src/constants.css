@@ -1,0 +1,108 @@
+/**
+ * Variables
+ */
+
+/* Breakpoints */
+@custom-media --x-small-up (width >= 420px);
+@custom-media --x-small-down (width < 420px);
+@custom-media --x-small-to-small (420px <= width < 540px);
+
+@custom-media --small-up (width >= 540px);
+@custom-media --small-down (width < 540px);
+@custom-media --small-to-medium (540px <= width < 720px);
+
+@custom-media --medium-up (width >= 720px);
+@custom-media --medium-down (width < 720px);
+@custom-media --medium-to-large (720px <= width < 946px);
+
+@custom-media --large-up (width >= 946px);
+@custom-media --large-down (width < 946px);
+@custom-media --large-to-x-large (946px <= width < 1100px);
+
+@custom-media --x-large-up (width >= 1100px);
+@custom-media --x-large-down (width < 1100px);
+
+:root {
+  --white: rgb(255, 255, 255);
+  --grey-05: rgb(242, 242, 243);
+  --grey-10: rgb(230, 230, 230);
+  --grey-25: rgb(194, 196, 199);
+  --grey-50: rgb(128, 128, 128);
+  --grey-75: rgb(75, 79, 88);
+  --black: rgb(0, 0, 0);
+  --blue: rgb(0, 92, 250);
+  --blue-50: rgb(99, 181, 222);
+  --blue-10: rgb(229, 239, 255);
+  --orange: rgb(249, 103, 6);
+  --orange-10: rgb(254, 240, 230);
+  --green: rgb(68, 162, 72);
+  --green-10: rgb(238, 246, 238);
+  --red: rgb(199, 41, 41);
+  --red-10: rgb(250, 235, 235);
+  --yellow: rgb(247, 141, 29);
+  --yellow-10: rgb(254, 242, 231);
+
+  /* Brand colors */
+  --brand-primary: var(--blue);
+  --brand-primary-light: var(--blue-10);
+  --brand-secondary: var(--orange);
+  --brand-secondary-light: var(--orange-10);
+  --brand-reverse: var(--white);
+  --brand-text: var(--black);
+
+  /* Typography */
+  --font-family: "Inter", Helvetica, Arial, sans-serif;
+  --font-family-variable: "Inter var", Helvetica, Arial, sans-serif;
+
+  --font-size-xxxxl: 3rem; /* 48px - Headline */
+  --font-size-xxxl: 2.5rem; /* 40px - H1 */
+  --font-size-xxl: 2rem; /* 32px - H2 */
+  --font-size-xl: 1.5rem; /* 24px - H3 */
+  --font-size-l: 1.125rem; /* 18px - H4 */
+  --font-size-m: 1rem; /* 16px - Body, H5 */
+  --font-size-s: 0.875rem; /* 14px - H6 */
+  --font-size-xs: 0.75rem; /* 12px - Sub */
+
+  --line-height: 1.6;
+  --line-height-h: 1.2;
+  --line-height-ui: 0.9;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-heavy: 800;
+
+  /* Spacing */
+  --spacing-xxs: 0.25rem; /* 4px */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-s: 1rem; /* 16px */
+  --spacing-m: 1.5rem; /* 24px */
+  --spacing-l: 2rem; /* 32px */
+  --spacing-xl: 2.5rem; /* 40px */
+  --spacing-xxl: 3rem; /* 48px */
+  --spacing-xxxl: 3.5rem; /* 56px */
+  --spacing-xxxxl: 4rem; /* 64px */
+  --spacing-ul: 4.5rem; /* 72px */
+  --spacing-uul: 5rem; /* 80px */
+  --spacing-uuul: 5.5rem; /* 88px */
+
+  --outline-width: 2px;
+  --outline-offset: var(--spacing-xs);
+
+  /* Layout */
+  --container-max-width-narrow: 580px;
+  --container-max-width-aligned: 776px;
+  --container-max-width: 1180px;
+}
+
+@media (--medium-down) {
+  :root {
+    --font-size-xxxxl: 2.5rem; /* 40px - Headline */
+    --font-size-xxxl: 1.875rem; /* 30px - H1 */
+    --font-size-xxl: 1.5rem; /* 24px - H2 */
+    --font-size-xl: 1.25rem; /* 20px - H3 */
+    --font-size-l: 1.125rem; /* 18px - H4 */
+    --font-size-m: 1rem; /* 16px - H5 */
+    --font-size-s: 0.875rem; /* 14px - Body, H6 */
+    --font-size-xs: 0.75rem; /* 12px - Sub */
+  }
+}

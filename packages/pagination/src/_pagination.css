@@ -1,0 +1,70 @@
+/**
+ * Pagination
+ *
+ * Markup: pagination.twig
+ *
+ * Style guide: Elements.pagination
+ */
+
+.pagination {
+  margin: var(--spacing-m) 0;
+  padding: 0;
+}
+
+.pagination__items {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  font-size: var(--font-size-s);
+  text-align: center;
+
+  & li {
+    display: inline-block;
+  }
+
+  & a {
+    padding: var(--spacing-xs);
+    color: var(--pagination-inactive-color);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--pagination-active-color);
+      border-bottom: 2px solid var(--pagination-active-color);
+    }
+  }
+}
+
+.pagination__item--active {
+  padding: var(--spacing-xs);
+  padding-bottom: calc(var(--spacing-xs) - 3px);
+  color: var(--pagination-active-color);
+  border-bottom: 2px solid var(--pagination-active-color);
+}
+
+.pagination__ellipsis {
+  padding: var(--spacing-xs);
+}
+
+.pagination__previous {
+  padding-left: var(--spacing-m);
+  margin-right: auto;
+  background-position: center left;
+}
+
+.pagination__next {
+  padding-right: var(--spacing-m);
+  margin-left: auto;
+  background-position: center right;
+}
+
+.pagination__previous,
+.pagination__next {
+  & > a {
+    font-weight: var(--font-weight-bold);
+    color: var(--pagination-active-color);
+  }
+}

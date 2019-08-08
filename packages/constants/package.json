@@ -1,0 +1,27 @@
+{
+  "name": "@pnx-mixtape/constants",
+  "version": "1.0.4",
+  "description": "constants component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/previousnext/mixtape/tree/master/packages/constants"
+  },
+  "author": "PreviousNext <info@previousnext.com.au>",
+  "license": "MIT",
+  "style": "src/constants.css",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "eyeglass": {
+    "name": "mixtape-constants",
+    "sassDir": "./",
+    "needs": "*",
+    "exports": false
+  },
+  "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "c1086ed546b19b6af33692cd304dc3c3a2fc76b5"
+}

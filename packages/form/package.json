@@ -1,0 +1,40 @@
+{
+  "name": "@pnx-mixtape/form",
+  "version": "1.0.7",
+  "description": "form component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/previousnext/mixtape/tree/master/packages/form"
+  },
+  "author": "PreviousNext <info@previousnext.com.au>",
+  "license": "MIT",
+  "main": "dist/form.js",
+  "module": "src/form.es6.js",
+  "style": "src/form.css",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "eyeglass": {
+    "name": "mixtape-form",
+    "sassDir": "./",
+    "needs": "*",
+    "exports": false
+  },
+  "scripts": {
+    "build:assets": "copyfiles -f 'src/**/*.{svg,jpg,png,gif}' dist/images",
+    "build:css": "NODE_ENV=production postcss src/form.css --dir dist --config ../../postcss.config.js",
+    "build:js": "NODE_ENV=production rollup src/form.es6.js --o dist/form.js --f cjs --name form --config ../../rollup.config.js",
+    "build": "npm run build:assets && npm run build:css && npm run build:js",
+    "prepare": "rm -rf ./dist && npm run build"
+  },
+  "dependencies": {
+    "@pnx-mixtape/constants": "^1.0.4",
+    "@pnx-mixtape/icon": "^1.0.4"
+  },
+  "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "c1086ed546b19b6af33692cd304dc3c3a2fc76b5"
+}

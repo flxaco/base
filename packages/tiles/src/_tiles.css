@@ -1,0 +1,87 @@
+/**
+ * Tiles
+ *
+ * Markup: tiles.twig
+ *
+ * Style guide: Elements.tile
+ */
+
+/**
+ * Tiles - Hover hide
+ *
+ * Certain elements within the tiles hide on hover.
+ *
+ * Markup: tiles-hover-hide.twig
+ *
+ * Style guide: Elements.tile-hover-hide
+ */
+.tile {
+  position: relative;
+  padding: var(--spacing-m);
+  border-radius: var(--tile-border-radius);
+  background: var(--tile-bg);
+  color: var(--tile-text-color);
+  overflow: hidden;
+  transition: 0.2s background-color, 0.2s background-image, 0.2s color;
+
+  &:hover,
+  &:focus {
+    color: var(--tile-text-hover);
+    background: var(--tile-bg-hover);
+
+    & .tile__hover-hide {
+      transform: scaleY(0);
+      opacity: 0;
+
+      & ~ * {
+        transform: translateY(calc(-1 * var(--tile-hover-hide-height)));
+      }
+    }
+  }
+
+  & .tile__hover-hide {
+    opacity: 1;
+    transition: 0.2s transform, 0.2s opacity;
+    transform-origin: top;
+
+    & ~ * {
+      transition: 0.2s transform;
+    }
+  }
+
+  & .tile__link-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-indent: -10000%;
+  }
+
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6,
+  & > p {
+    margin-top: 0;
+  }
+}
+
+.tiles--small {
+  & .tile {
+    min-height: var(--tile-height-small);
+  }
+}
+
+.tiles--medium {
+  & .tile {
+    min-height: var(--tile-height-medium);
+  }
+}
+
+.tiles--large {
+  & .tile {
+    min-height: var(--tile-height-large);
+  }
+}

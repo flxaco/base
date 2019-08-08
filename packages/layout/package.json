@@ -1,0 +1,35 @@
+{
+  "name": "@pnx-mixtape/layout",
+  "version": "1.0.9",
+  "description": "layout component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/previousnext/mixtape/tree/master/packages/layout"
+  },
+  "author": "PreviousNext <info@previousnext.com.au>",
+  "license": "MIT",
+  "style": "src/layout.css",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "eyeglass": {
+    "name": "mixtape-layout",
+    "sassDir": "./",
+    "needs": "*",
+    "exports": false
+  },
+  "scripts": {
+    "build:css": "NODE_ENV=production postcss src/layout.css --dir dist --config ../../postcss.config.js",
+    "build": "npm run build:css",
+    "prepare": "rm -rf ./dist && npm run build"
+  },
+  "dependencies": {
+    "@pnx-mixtape/constants": "^1.0.4"
+  },
+  "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "10b6bf74978a899cb0f764ea7685192336148d5d"
+}

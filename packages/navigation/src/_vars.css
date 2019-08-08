@@ -1,0 +1,18 @@
+:root {
+  --nav-dropdown-width: 271px;
+  --nav-dropdown-highlight: var(--brand-primary-light);
+  --nav-dropdown-bg: var(--brand-reverse);
+  --nav-dropdown-border-radius: 3px;
+  --nav-dropdown-shadow: 0 0 var(--spacing-xs) var(--grey-50);
+  --nav-dropdown-item-spacing: var(--spacing-xxs);
+  --nav-dropdown-animation-distance: var(--spacing-xs);
+
+  --nav-breadcrumb-size: var(--font-size-s);
+  --nav-breadcrumb-color: var(--grey-50);
+  --nav-breadcrumb-spacing: var(--spacing-l);
+
+  --nav-mega-nav-active-bg: var(--brand-primary);
+  --nav-mega-nav-active-color: var(--brand-reverse);
+  --nav-mega-nav-l2-item-spacing: .625rem;
+  --nav-mega-nav-width: 600px;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@pnx-mixtape/global",
+  "version": "0.1.2",
+  "description": "global component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/previousnext/mixtape/tree/master/packages/global"
+  },
+  "author": "PreviousNext <info@previousnext.com.au>",
+  "license": "MIT",
+  "main": "dist/mobile-toggle.js",
+  "module": "src/mobile-toggle.es6.js",
+  "style": "src/global.css",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "eyeglass": {
+    "name": "mixtape-global",
+    "sassDir": "./",
+    "needs": "*",
+    "exports": false
+  },
+  "scripts": {
+    "build:css": "NODE_ENV=production postcss src/global.css --dir dist --config ../../postcss.config.js",
+    "build:js": "NODE_ENV=production rollup src/mobile-toggle.es6.js --o dist/mobile-toggle.js --f cjs --name global --config ../../rollup.config.js",
+    "build": "npm run build:css && npm run build:js",
+    "prepare": "rm -rf ./dist && npm run build"
+  },
+  "dependencies": {
+    "@pnx-mixtape/constants": "^1.0.4",
+    "@pnx-mixtape/navigation": "^0.0.7"
+  },
+  "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "c1086ed546b19b6af33692cd304dc3c3a2fc76b5"
+}

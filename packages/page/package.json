@@ -1,0 +1,34 @@
+{
+  "name": "@pnx-mixtape/page",
+  "version": "0.0.6",
+  "description": "page component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/previousnext/mixtape/tree/master/packages/page"
+  },
+  "author": "PreviousNext <info@previousnext.com.au>",
+  "license": "MIT",
+  "style": "src/page.css",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "eyeglass": {
+    "name": "mixtape-page",
+    "sassDir": "./",
+    "needs": "*",
+    "exports": false
+  },
+  "scripts": {
+    "build:css": "NODE_ENV=production postcss src/page.css --dir dist --config ../../postcss.config.js",
+    "build": "npm run build:css",
+    "prepare": "rm -rf ./dist && npm run build"
+  },
+  "dependencies": {
+    "@pnx-mixtape/constants": "^1.0.4"
+  },
+  "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
+  "publishConfig": {
+    "access": "public"
+  }
+}

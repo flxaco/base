@@ -1,0 +1,37 @@
+{
+  "name": "@pnx-mixtape/previous-next",
+  "version": "0.0.3",
+  "description": "previous-next component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/previousnext/mixtape/tree/master/packages/previous-next"
+  },
+  "author": "PreviousNext <info@previousnext.com.au>",
+  "license": "MIT",
+  "main": "dist/previous-next.js",
+  "module": "src/previous-next.es6.js",
+  "style": "src/previous-next.css",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "eyeglass": {
+    "name": "mixtape-previous-next",
+    "sassDir": "./",
+    "needs": "*",
+    "exports": false
+  },
+  "scripts": {
+    "build:assets": "copyfiles -f 'src/**/*.{svg,jpg,png,gif}' dist/images",
+    "build:css": "NODE_ENV=production postcss src/previous-next.css --dir dist --config ../../postcss.config.js",
+    "build": "npm run build:assets && npm run build:css",
+    "prepare": "rm -rf ./dist && npm run build"
+  },
+  "dependencies": {
+    "@pnx-mixtape/constants": "^1.0.4"
+  },
+  "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
+  "publishConfig": {
+    "access": "public"
+  }
+}
