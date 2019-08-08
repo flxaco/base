@@ -1,5 +1,5 @@
 {
-  "name": "@pnx-mixtape/PACKAGE_NAME",
+  "name": "@flxaco-base/PACKAGE_NAME",
   "version": "0.0.0",
   "description": "PACKAGE_NAME component",
   "repository": {
@@ -28,7 +28,7 @@
     "prepare": "rm -rf ./dist && npm run build"
   },
   "dependencies": {
-    "@pnx-mixtape/constants": "^1.0.3"
+    "@flxaco-base/constants": "^1.0.3"
   },
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "publishConfig": {

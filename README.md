@@ -50,7 +50,7 @@ In your other project run:
 
 ```
 nvm install && nvm use
-npm link @pnx-mixtape/package
+npm link @flxaco-base/package
 ```
 
 You will need to run `npm link` for each package you wish to link. You
