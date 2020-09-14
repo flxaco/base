@@ -65,7 +65,7 @@
     "lint:css": "stylelint packages/*/src/**/*.css --custom-formatter=node_modules/stylelint-formatter-pretty",
     "lint:js": "eslint packages/*/src/**/*.js scripts/**/*.js -f pretty",
     "lint": "npm-run-all lint:*",
-    "test": "wait-on http://127.0.0.1:3000 -t 10000 && nightwatch",
+    "test": "wait-on http://127.0.0.1:6006 -t 10000 && nightwatch",
     "create-package": "./scripts/create-package.sh",
     "link-packages": "./scripts/link-packages.sh",
     "clean-packages": "./scripts/clean-packages.sh",
