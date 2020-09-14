@@ -15,7 +15,8 @@
   ],
   "scripts": {
     "build:css": "NODE_ENV=production postcss src/button.css --dir dist --config ../../.storybook/postcss.config.js",
-    "build": "npm run build:css",
+    "build:js": "NODE_ENV=production babel --presets @babel/preset-react --out-file dist/Button.js src/Button.js",
+    "build": "npm run build:css && npm run build:js",
     "prepare": "rm -rf ./dist && npm run build"
   },
   "dependencies": {
