@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './logo.css';
 
 const Logo = ({ name }) => (
@@ -8,5 +9,13 @@ const Logo = ({ name }) => (
     </h1>
   </div>
 );
+
+Logo.propTypes = {
+  name: PropTypes.string,
+};
+
+Logo.defaultProps = {
+  name: 'Logo',
+};
 
 export default Logo;

@@ -1,18 +1,16 @@
 import React from 'react';
-
 import Tag from './tag';
 
 export default {
-  title: 'Example/Tag',
+  title: 'Components/Tag',
   component: Tag,
 };
 
-const Template = () => (
-  <Tag title="Skills" tags={['a', 'b', 'c', 'd']} />
-);
+const Template = args => <Tag {...args} />;
 
 export const Default = Template.bind({});
 
 Default.args = {
-  label: 'Tag',
+  title: 'Skills',
+  tags: ['a', 'b', 'c', 'd'],
 };

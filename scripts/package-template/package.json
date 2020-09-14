@@ -4,31 +4,26 @@
   "description": "PACKAGE_NAME component",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/previousnext/mixtape/tree/master/packages/PACKAGE_NAME"
+    "url": "git+https://github.com/flxaco/base/tree/master/packages/PACKAGE_NAME"
   },
-  "author": "PreviousNext <info@previousnext.com.au>",
+  "author": "Nick Fletcher <hi@flxa.co>",
   "license": "MIT",
   "main": "dist/PACKAGE_NAME.js",
-  "module": "src/PACKAGE_NAME.es6.js",
+  "module": "dist/PACKAGE_NAME.js",
   "style": "src/PACKAGE_NAME.css",
   "files": [
     "dist/*",
     "src/*"
   ],
-  "eyeglass": {
-    "name": "flxaco-PACKAGE_NAME",
-    "sassDir": "./",
-    "needs": "*",
-    "exports": false
-  },
   "scripts": {
     "build:css": "NODE_ENV=production postcss src/PACKAGE_NAME.css --dir dist --config ../../postcss.config.js",
-    "build:js": "NODE_ENV=production rollup src/PACKAGE_NAME.es6.js --o dist/PACKAGE_NAME.js --f cjs --name PACKAGE_NAME --config ../../rollup.config.js",
     "build": "npm run build:css && npm run build:js",
     "prepare": "rm -rf ./dist && npm run build"
   },
   "dependencies": {
-    "@flxaco/constants": "^0.0.3"
+    "@flxaco/constants": "^0.0.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1"
   },
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "publishConfig": {

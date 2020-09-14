@@ -1,40 +1,25 @@
-# @flxaco/page
+# @flxaco/tag
 
-Page
+Tag component
 
 ### Installation
 
 ```
-npm install @flxaco/page --save-dev
+npm install @flxaco/tag --save-dev
 ```
 
 ### How to use
 
 **CSS**
 
-- PostCSS workflow: `@import '@flxaco/page';`
-- Sass/Eyeglass: `@import 'mixtape-page';`
-- Native CSS: `@import url('dist/page.css');`
-- Link tag: `<link href="dist/page.css" rel="stylesheet" type="text/css">`
+- PostCSS workflow: `@import '@flxaco/tag';`
+- Native CSS: `@import url('dist/tag.css');`
+- Link tag: `<link href="dist/tag.css" rel="stylesheet" type="text/css">`
 
 ### Developer notes
 
 To use with default values:
 
 ```css
-@import "@flxaco/page";
-```
-
-To override variables in a project:
-
-```css
-@import "@flxaco/constants";
-
-@import "path/to/local/project/vars.css";
-
-@import "@flxaco/page/src/_page.css";
-
-.button {
-  /* Overrides */
-}
+@import "@flxaco/tag";
 ```

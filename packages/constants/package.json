@@ -1,7 +1,7 @@
 {
   "name": "@flxaco/constants",
   "version": "0.0.3",
-  "description": "constants component",
+  "description": "CSS Custom Properties used by postcss components.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flxaco/base/tree/master/packages/constants"
@@ -13,12 +13,6 @@
     "dist/*",
     "src/*"
   ],
-  "eyeglass": {
-    "name": "flxaco-constants",
-    "sassDir": "./",
-    "needs": "*",
-    "exports": false
-  },
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "publishConfig": {
     "access": "public"

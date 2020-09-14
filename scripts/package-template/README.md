@@ -2,8 +2,6 @@
 
 PACKAGE_NAME component.
 
-![PACKAGE_NAME  component](https://previousnext.github.io/mixtape/screenshots/PACKAGE_NAME.png)
-
 ### Installation
 
 ```
@@ -15,7 +13,6 @@ npm install @flxaco/PACKAGE_NAME --save-dev
 **CSS**
 
 - PostCSS workflow: `@import '@flxaco/PACKAGE_NAME';`
-- Sass/Eyeglass: `@import 'flxaco-PACKAGE_NAME';`
 - Native CSS: `@import url('dist/PACKAGE_NAME.css');`
 - Link tag: `<link href="dist/PACKAGE_NAME.css" rel="stylesheet" type="text/css">`
 

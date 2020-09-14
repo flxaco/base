@@ -1,7 +1,7 @@
 {
   "name": "@flxaco/button",
   "version": "0.0.1",
-  "description": "button component",
+  "description": "Button component provides postcss, jsx, and a Storybook example.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flxaco/base/tree/master/packages/button"
@@ -13,19 +13,15 @@
     "dist/*",
     "src/*"
   ],
-  "eyeglass": {
-    "name": "flxaco-button",
-    "sassDir": "./",
-    "needs": "*",
-    "exports": false
-  },
   "scripts": {
     "build:css": "NODE_ENV=production postcss src/button.css --dir dist --config ../../.storybook/postcss.config.js",
     "build": "npm run build:css",
     "prepare": "rm -rf ./dist && npm run build"
   },
   "dependencies": {
-    "@flxaco/constants": "^0.0.3"
+    "@flxaco/constants": "^0.0.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1"
   },
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "publishConfig": {

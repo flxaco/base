@@ -1,15 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
 import Card from './card';
 
 export default {
-  title: 'Example/Card',
+  title: 'Components/Card',
   component: Card,
 };
 
-const Template = ({ modifierClass = '', image = null }) => (
-  <Card modifier_class={modifierClass} image={image}>
+const Template = args => (
+  <Card {...args}>
     <div className="card__content">
       <h4>Project Name</h4>
       <p>Project description.</p>
@@ -17,23 +15,14 @@ const Template = ({ modifierClass = '', image = null }) => (
   </Card>
 );
 
-Template.propTypes = {
-  modifierClass: PropTypes.string,
-  image: PropTypes.element,
-};
-
-Template.defaultProps = {
+export const Default = Template.bind({});
+Default.args = {
   modifierClass: '',
   image: null,
 };
 
-export const Default = Template.bind({});
-Default.args = {
-  label: 'Card',
-};
-
 export const Image = Template.bind({});
 Image.args = {
-  label: 'Card',
+  modifierClass: 'card--image',
   image: 'https://source.unsplash.com/random',
 };

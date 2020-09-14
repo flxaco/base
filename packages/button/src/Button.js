@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+const Button = ({
+  primary, backgroundColor, size, label, ...props
+}) => {
   const mode = primary ? 'button--primary' : 'button--secondary';
   return (
     <button
@@ -48,3 +47,5 @@ Button.defaultProps = {
   size: 'medium',
   onClick: undefined,
 };
+
+export default Button;

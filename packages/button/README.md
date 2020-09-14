@@ -13,7 +13,6 @@ npm install @flxaco/button --save-dev
 **CSS**
 
 - PostCSS workflow: `@import '@flxaco/button';`
-- Sass/Eyeglass: `@import 'mixtape-button';`
 - Native CSS: `@import url('dist/button.css');`
 - Link tag: `<link href="dist/button.css" rel="stylesheet" type="text/css">`
 

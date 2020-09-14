@@ -1,17 +1,14 @@
 import React from 'react';
-
 import Logo from './logo';
 
 export default {
-  title: 'Example/Logo',
+  title: 'Components/Logo',
   component: Logo,
 };
 
-const Template = () => (
-  <Logo name="Nick Fletcher" />
-);
+const Template = args => <Logo {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  label: 'Logo',
+  name: 'Logo text',
 };

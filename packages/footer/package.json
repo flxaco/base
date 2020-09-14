@@ -1,7 +1,7 @@
 {
   "name": "@flxaco/footer",
   "version": "0.0.1",
-  "description": "constants component",
+  "description": "Footer component, displays copyright.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flxaco/base/tree/master/packages/footer"
@@ -13,6 +13,16 @@
     "dist/*",
     "src/*"
   ],
+  "scripts": {
+    "build:css": "NODE_ENV=production postcss src/footer.css --dir dist --config ../../postcss.config.js",
+    "build": "npm run build:css",
+    "prepare": "rm -rf ./dist && npm run build"
+  },
+  "dependencies": {
+    "@flxaco/constants": "^0.0.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1"
+  },
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "publishConfig": {
     "access": "public"

@@ -1,11 +1,5 @@
 @import '../../constants/src/constants.css';
 
-/**
- * Buttons
- *
- * Style guide: Elements.buttons
- */
-
 .button {
   display: inline-block;
   border: 2px solid;
@@ -40,21 +34,6 @@
   font-size: var(--font-size-xs);
 }
 
-/**
- * Primary Buttons
- *
- * .button--primary.button--large - Primary Large
- * .button--primary - Primary
- * .button--primary.button--small - Primary Small
- * .button--primary.button--extra-small - Primary Extra Small
- *
- * default: false
- *
- * Markup: button.twig
- *
- * Style guide: Elements.buttons.primary
- */
-
 .button--primary {
   border-color: var(--brand-primary);
   background-color: var(--brand-primary);
@@ -66,20 +45,6 @@
   }
 }
 
-/**
- * Secondary Buttons
- *
- * default: false
- *
- * .button--secondary.button--large - Secondary Large
- * .button--secondary - Secondary
- * .button--secondary.button--small - Secondary Small
- * .button--secondary.button--extra-small - Secondary Extra Small
- *
- * Markup: button.twig
- *
- * Style guide: Elements.buttons.secondary
- */
 .button--secondary {
   border-color: var(--brand-primary);
   background-color: var(--brand-reverse);
@@ -91,20 +56,6 @@
   }
 }
 
-/**
- * White Buttons
- *
- * default: false
- *
- * .button--white.button--large - White Large
- * .button--white - White
- * .button--white.button--small - White Small
- * .button--white.button--extra-small - White Extra Small
- *
- * Markup: button.twig
- *
- * Style guide: Elements.buttons.white
- */
 .button--white {
   border-color: var(--brand-reverse);
   background-color: var(--brand-reverse);
@@ -116,20 +67,6 @@
   }
 }
 
-/**
- * Reverse Buttons
- *
- * default: false
- *
- * .button--reverse.button--large - Reverse Large
- * .button--reverse - Reverse
- * .button--reverse.button--small - Reverse Small
- * .button--reverse.button--extra-small - Reverse Extra Small
- *
- * Markup: button.twig
- *
- * Style guide: Elements.buttons.reverse
- */
 .button--reverse {
   border-color: var(--brand-reverse);
   background-color: transparent;

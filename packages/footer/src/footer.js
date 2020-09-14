@@ -1,7 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default ({copyright}) => (
+const Footer = ({ copyright }) => (
   <section className="footer">
-    &copy; {copyright}
+    &copy;
+    {' '}
+    {copyright}
   </section>
 );
+
+Footer.propTypes = {
+  copyright: PropTypes.string,
+};
+
+Footer.defaultProps = {
+  copyright: '',
+};
+
+export default Footer;

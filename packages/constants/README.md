@@ -13,7 +13,6 @@ npm install @flxaco/constants --save-dev
 **CSS**
 
 - PostCSS workflow: `@import '@flxaco/constants';`
-- Sass/Eyeglass: `@import 'mixtape-constants';`
 - Native CSS: `@import url('dist/constants.css');`
 - Link tag: `<link href="dist/constants.css" rel="stylesheet" type="text/css">`
 

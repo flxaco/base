@@ -1,17 +1,43 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './card.css';
 
-export default ({children, modifier_class, image}) => {
-  return (
-    <div className={`card ${modifier_class}`}>
-      {
-        image
-          ? <div className="card__image-wrapper">
-            <img src={image} className="card__image" />
+const Card = ({
+  children, modifierClass, image, ...props
+}) => (
+  <div className={`card ${modifierClass}`} {...props}>
+    {
+      image
+        ? (
+          <div className="card__image-wrapper">
+            <img src={image} alt="" className="card__image" />
           </div>
-          : ''
-      }
-      {children}
-    </div>
-  );
+        )
+        : ''
+    }
+    {children}
+  </div>
+);
+
+Card.propTypes = {
+  /**
+   * Inner content
+   */
+  children: PropTypes.node,
+  /**
+   * Additional classes
+   */
+  modifierClass: PropTypes.string,
+  /**
+   * Image src
+   */
+  image: PropTypes.string,
 };
+
+Card.defaultProps = {
+  children: null,
+  modifierClass: '',
+  image: '',
+};
+
+export default Card;
