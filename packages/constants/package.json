@@ -1,6 +1,6 @@
 {
   "name": "@flxaco/constants",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "CSS Custom Properties used by postcss components.",
   "repository": {
     "type": "git",
