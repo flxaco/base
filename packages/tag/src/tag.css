@@ -1,0 +1,43 @@
+@import url('../../constants/src/constants.css');
+
+.tags {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  border-radius: .25rem;
+}
+
+.tags h3 {
+  display: flex;
+  margin: 0;
+}
+
+.tags h3 svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .5rem;
+}
+
+.tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: .5rem 0 0;
+  list-style: none;
+}
+
+.tag {
+  padding: .25rem .5rem;
+  margin-right: .5rem;
+  margin-top: .5rem;
+  border-radius: .25rem;
+  font-size: .875rem;
+  line-height: 1;
+  background-color: rgba(0, 0, 0, .025);
+}
+
+.tags__title {
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+}

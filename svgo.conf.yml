@@ -1,4 +1,0 @@
-plugins:
-  - removeDimensions: false
-  - removeViewBox: false
-  - removeTitle: false

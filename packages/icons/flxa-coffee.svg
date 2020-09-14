@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="coffee-long" transform="translate(64.000000, 33.000000)" fill-rule="nonzero">
+            <path d="M314.27725,446 L71.72275,446 C66.4468423,446.018598 62.0408961,441.978712 61.59775,436.716153 L31,71 L355,71 L324.36175,436.716153 C323.91988,441.963171 319.537612,446 314.27725,446 Z" id="Path" fill="#EAD8C5"></path>
+            <polygon id="Path" fill="#C19F85" points="334.087147 325 346 184 40 184 51.9128532 325"></polygon>
+            <path d="M374.868421,51 L10.1315789,51 C4.5360624,51 0,55.4771525 0,61 L0,71 C0,76.5228475 4.5360624,81 10.1315789,81 L374.868421,81 C380.463938,81 385,76.5228475 385,71 L385,61 C385,55.4771525 380.463938,51 374.868421,51 Z" id="Path" fill="#444444"></path>
+            <path d="M307.240923,6.29 C305.70084,2.49349519 301.969322,0.00258765642 297.818154,0 L88.1818462,0 C84.0306777,0.00258765642 80.2991599,2.49349519 78.7590769,6.29 L61,50 L325,50 L307.240923,6.29 Z" id="Path" fill="#5B5B5B"></path>
+        </g>
+        <text id="FLXA" font-family="Montserrat-Bold, Montserrat" font-size="70" font-weight="bold" fill="#000000">
+            <tspan x="161.695" y="313">FLXA</tspan>
+        </text>
+    </g>
+</svg>

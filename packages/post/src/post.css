@@ -1,0 +1,97 @@
+@import url('../../constants/src/constants.css');
+
+.post + .post {
+  margin-top: 4rem;
+}
+
+.post__title {
+  display: flex;
+  padding: 1rem 0;
+  width: 100vw;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  box-shadow: var(--box-shadow);
+}
+
+.post__title svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .5rem;
+}
+
+.post__title span {
+  padding-left: .25rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 600px) {
+  .post__title {
+    font-size: 1.25rem;
+  }
+
+  .post__title svg {
+    width: 2rem;
+    height: 2rem;
+    margin-right: .75rem;
+  }
+}
+
+.post__content {
+  margin-top: 2rem;
+}
+
+@media (min-width: 600px) {
+  .post__content {
+    display: flex;
+  }
+}
+
+blockquote {
+  background-image: linear-gradient(90deg, #E52E71, #FB8904);
+  transform: rotate(-2deg) skew(-2deg, 0deg);
+  background: linear-gradient(90deg, #E52E71, #FB8904);
+  box-decoration-break: clone;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 1.5rem;
+}
+
+.date-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.date-box > div {
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-right: 1rem;
+  color: #ccc;
+}
+
+@media (min-width: 600px) {
+  .post-intro {
+    display: flex;
+  }
+
+  .date-box {
+    display: block;
+    margin-top: 0;
+  }
+
+  .date-box > div {
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 0 1rem rgba(0,0,0,.1);
+  }
+}
+
+.project-image.gatsby-image-wrapper {
+  width: 400px;
+  min-height: 400px;
+}

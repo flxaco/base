@@ -1,0 +1,28 @@
+{
+  "name": "@flxaco/tag",
+  "version": "0.0.1",
+  "description": "tag component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flxaco/base/tree/master/packages/tag"
+  },
+  "author": "Nick Fletcher <hi@flxa.co>",
+  "license": "MIT",
+  "style": "src/tag.css",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "scripts": {
+    "build:css": "NODE_ENV=production postcss src/tag.css --dir dist --config ../../postcss.config.js",
+    "build": "npm run build:css",
+    "prepare": "rm -rf ./dist && npm run build"
+  },
+  "dependencies": {
+    "@flxaco/constants": "^0.0.3"
+  },
+  "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
+  "publishConfig": {
+    "access": "public"
+  }
+}

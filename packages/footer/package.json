@@ -1,0 +1,20 @@
+{
+  "name": "@flxaco/footer",
+  "version": "0.0.1",
+  "description": "constants component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flxaco/base/tree/master/packages/footer"
+  },
+  "author": "Nick Fletcher <hi@flxa.co>",
+  "license": "MIT",
+  "style": "src/footer.css",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
+  "publishConfig": {
+    "access": "public"
+  }
+}

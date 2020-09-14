@@ -51,8 +51,8 @@
   --brand-text: var(--black);
 
   /* Typography */
-  --font-family: "Inter", Helvetica, Arial, sans-serif;
-  --font-family-variable: "Inter var", Helvetica, Arial, sans-serif;
+  --font-family: Helvetica, Arial, sans-serif;
+  --font-family-variable: Helvetica, Arial, sans-serif;
 
   --font-size-xxxxl: 3rem; /* 48px - Headline */
   --font-size-xxxl: 2.5rem; /* 40px - H1 */
@@ -89,20 +89,28 @@
   --outline-offset: var(--spacing-xs);
 
   /* Layout */
-  --container-max-width-narrow: 580px;
-  --container-max-width-aligned: 776px;
+  --container-max-width-narrow: 600px;
+  --container-max-width-aligned: 768px;
   --container-max-width: 1180px;
+
+  /* Design */
+  --box-shadow: .5rem .875rem 1rem rgba(0, 0, 0, .025);
 }
 
 @media (--medium-down) {
   :root {
-    --font-size-xxxxl: 2.5rem; /* 40px - Headline */
-    --font-size-xxxl: 1.875rem; /* 30px - H1 */
+    --font-size-xxxxl: 2rem; /* 32px - Headline */
+    --font-size-xxxl: 1.75rem; /* 28px - H1 */
     --font-size-xxl: 1.5rem; /* 24px - H2 */
     --font-size-xl: 1.25rem; /* 20px - H3 */
     --font-size-l: 1.125rem; /* 18px - H4 */
     --font-size-m: 1rem; /* 16px - H5 */
     --font-size-s: 0.875rem; /* 14px - Body, H6 */
-    --font-size-xs: 0.75rem; /* 12px - Sub */
+    --font-size-xs: 0.75rem; /* 12px */
   }
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-m);
 }

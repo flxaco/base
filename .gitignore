@@ -9,7 +9,6 @@ yarn-error.log*
 ######################
 .DS_Store
 ehthumbs.db
-Icon?
 Thumbs.db
 
 # Development files #
@@ -29,5 +28,4 @@ dist
 app
 stats.json
 
-# Special folders
-talk
+storybook-static
