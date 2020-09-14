@@ -1,6 +1,6 @@
 {
   "name": "@flxaco/profile",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Profile component, displays writer/user contact details and links.",
   "repository": {
     "type": "git",

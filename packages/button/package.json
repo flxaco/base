@@ -1,6 +1,6 @@
 {
   "name": "@flxaco/button",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Button component provides postcss, jsx, and a Storybook example.",
   "repository": {
     "type": "git",
