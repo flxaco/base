@@ -1,6 +1,6 @@
 {
   "name": "@flxaco/tag",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "tag component",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "prepare": "rm -rf ./dist && npm run build"
   },
   "dependencies": {
-    "@flxaco/constants": "^0.0.4",
+    "@flxaco/constants": "^0.0.5",
     "prop-types": "^15.7.2",
     "react": "^16.13.1"
   },
