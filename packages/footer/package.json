@@ -1,6 +1,6 @@
 {
   "name": "@flxaco/footer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Footer component, displays copyright.",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "prepare": "rm -rf ./dist && npm run build"
   },
   "dependencies": {
-    "@flxaco/constants": "^0.0.3",
+    "@flxaco/constants": "^0.0.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1"
   },
