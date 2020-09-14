@@ -1,4 +1,7 @@
 /* eslint-disable */
+
+const env = 'production';
+
 module.exports = {
   plugins: {
     'postcss-import': {},
@@ -14,17 +17,15 @@ module.exports = {
     'postcss-inline-svg': {},
     'postcss-object-fit-images': {},
     cssnano:
-      ctx.env === 'production'
-        ? {
-            preset: [
-              'default',
-              {
-                discardComments: {
-                  removeAll: true,
-                },
-              },
-            ],
-          }
-        : false,
+    {
+      preset: [
+        'default',
+        {
+          discardComments: {
+            removeAll: true,
+          },
+        },
+      ],
+    }
   },
 };

@@ -50,6 +50,7 @@
     "watch": "npm run storybook",
     "lerna:bootstrap": "lerna bootstrap --ignore-scripts --no-ci --hoist {postcss-cli,webpack-cli,babel-loader,npm-run-all}",
     "lerna:build": "lerna run prepare",
+    "lerna:publish": "lerna version && lerna publish",
     "lint:css": "stylelint packages/*/src/**/*.css --custom-formatter=node_modules/stylelint-formatter-pretty",
     "lint:js": "eslint packages/*/src/**/*.js scripts/**/*.js -f pretty",
     "lint": "npm-run-all lint:*",
