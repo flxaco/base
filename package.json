@@ -49,7 +49,7 @@
     "start": "npm run watch",
     "build": "npm-run-all clean-packages lerna:build",
     "watch": "npm run storybook",
-    "lerna:bootstrap": "lerna bootstrap --ignore-scripts --no-ci --hoist {babel,postcss-cli,webpack-cli,babel-loader,npm-run-all}",
+    "lerna:bootstrap": "lerna bootstrap --ignore-scripts --no-ci --hoist {babel,@babel/core,@babel/cli,@babel/preset-react,postcss-cli,webpack-cli,babel-loader,npm-run-all}",
     "lerna:build": "lerna run prepare",
     "lerna:publish": "lerna version && lerna publish",
     "lint:css": "stylelint packages/*/src/**/*.css --custom-formatter=node_modules/stylelint-formatter-pretty",
