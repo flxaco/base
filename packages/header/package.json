@@ -1,6 +1,6 @@
 {
   "name": "@flxaco/header",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "header component",
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@babel/cli": "^7.11.6",
-    "@flxaco/constants": "^0.0.9",
+    "@flxaco/constants": "^0.0.10",
     "prop-types": "^15.7.2",
     "react": "^16.13.1"
   },
