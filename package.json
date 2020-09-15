@@ -47,7 +47,7 @@
   },
   "scripts": {
     "start": "npm run watch",
-    "build": "npm-run-all clean-packages lerna:build",
+    "build": "npm-run-all clean-packages lerna:bootstrap lerna:build",
     "watch": "npm run storybook",
     "lerna:bootstrap": "lerna bootstrap --ignore-scripts --no-ci --hoist {babel,@babel/core,@babel/cli,@babel/preset-react,postcss-cli,webpack-cli,babel-loader,npm-run-all}",
     "lerna:build": "lerna run prepare",
