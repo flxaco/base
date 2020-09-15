@@ -1,36 +1,27 @@
 # Base
 
-Intro TBC
+My personal "Base" monorepo of postcss and react components. Built to be used by projects that import postcss and react.
 
-### Road map
+The objective here is to keep the components simple and unopinionated.
 
-* [x] Create monorepository using Lerna.
+### Demo
 
-### Using Base
-
-_TBC..._
+View the example demo on the [gh-pages branch](https://flxaco.github.io/base).
 
 ### Build tools
 
-This project uses Docker to manage node versions and build tasks.
-
 **1. Dependencies and building**
 
-Ensure you have docker for your OS installed, then run:
-
 ```
-make install && make up
+npm install
+npm start
 ```
 
-Assuming you are using MacOS, this will first install all dependencies
-and then run the webserver and begin watching files.
-
-From here you can make changes to any files in the packages dir and gulp
-will rebuild as needed and hot reload the Browsersync server where possible.
+`npm start` just runs storybook in dev mode. The webpack configuration has been overridden in `.storybook/main.js`. I've removed the original css rule and replaced it with a new css rule for postcss processing and output.
 
 **2. Link packages for local development**
 
-You can use the local versions of GEL packages in other local repos with the
+You can use the local versions of Base packages in other local repos with the
 help of `npm link`. The command below needs to be run in this repo first. Follow
 instructions in the other repo to finish the linking process.
 
@@ -67,29 +58,21 @@ create a pull request, wait for Circleci to pass, and get the code reviewed.
 Merge the PR, then run:
 
 ```
-lerna version
+npm run lerna:publish
 ```
 
 This will go through all packages that have changed since their last release
 and walk you through bumping each version number. It will change the version
 number in package.json and commit the change to git.
 
-We are using independant versioning so each package in the monorepository has it's
-own version number.
+We are using independant versioning so each package in the monorepository has it's own version number.
 
 Finally, to publish these versions run:
-
-```
-lerna publish from-package
-```
 
 **4. Create a new package**
 
 Packages should represent self contained components (eg. the `social` package),
 or in some cases groups of related components (eg. the `form` package).
-
-Packages should only be created for elements that will someday make it into
-Mixtape. Drupal 8/CI specific front end elements shouldn't be added to npmjs.com.
 
 First, come up with a package name. Keep it simple - one word, a-z only,
 all lowercase, no hyphens or special characters.
@@ -100,8 +83,6 @@ Then run:
 npm run create-package
 ```
 
-An interactive prompt will ask you the package name and bootstrap your package
-and then setup your package boilerplate inside `packages/<package>`.
+An interactive prompt will ask you the package name and bootstrap your package and then setup your package boilerplate inside `packages/<package>`.
 
-Now you can build it, add tests to a `tests` directory inside your package, and
-when you are ready, follow the publish instructions for a single package above.
+Now you can build it, add tests to a `tests` directory inside your package, and when you are ready, follow the publish instructions for a single package above.
