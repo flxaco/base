@@ -8,7 +8,8 @@
   },
   "author": "Nick Fletcher <hi@flxa.co>",
   "license": "MIT",
-  "style": "src/header.css",
+  "main": "src/profile.js",
+  "style": "src/profile.css",
   "files": [
     "dist/*",
     "src/*"

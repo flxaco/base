@@ -8,6 +8,7 @@
   },
   "author": "Nick Fletcher <hi@flxa.co>",
   "license": "MIT",
+  "main": "src/Button.js",
   "style": "src/button.css",
   "files": [
     "dist/*",

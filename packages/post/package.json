@@ -8,6 +8,7 @@
   },
   "author": "Nick Fletcher <hi@flxa.co>",
   "license": "MIT",
+  "main": "src/post.js",
   "style": "src/post.css",
   "files": [
     "dist/*",

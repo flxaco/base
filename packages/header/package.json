@@ -8,17 +8,12 @@
   },
   "author": "Nick Fletcher <hi@flxa.co>",
   "license": "MIT",
+  "main": "src/Header.js",
   "style": "src/header.css",
   "files": [
     "dist/*",
     "src/*"
   ],
-  "eyeglass": {
-    "name": "flxaco-header",
-    "sassDir": "./",
-    "needs": "*",
-    "exports": false
-  },
   "scripts": {
     "build:css": "NODE_ENV=production postcss src/header.css --dir dist --config ../../postcss.config.js",
     "build:js": "NODE_ENV=production babel --presets @babel/preset-react --out-file dist/Header.js src/Header.js",

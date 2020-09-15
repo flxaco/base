@@ -8,6 +8,7 @@
   },
   "author": "Nick Fletcher <hi@flxa.co>",
   "license": "MIT",
+  "main": "src/card.js",
   "style": "src/card.css",
   "files": [
     "dist/*",
