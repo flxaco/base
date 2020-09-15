@@ -23,6 +23,7 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
+    "http-server": "^0.12.3",
     "lerna": "^3.15.0",
     "mini-css-extract-plugin": "^0.11.1",
     "nightwatch": "^1.1.13",
@@ -60,7 +61,9 @@
     "link-packages": "./scripts/link-packages.sh",
     "clean-packages": "./scripts/clean-packages.sh",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "npm run clean-storybook-static && build-storybook",
+    "serve-storybook-static": "http-server ./storybook-static",
+    "clean-storybook-static": "rm -rf ./storybook-static"
   },
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "private": true,
