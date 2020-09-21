@@ -239,13 +239,13 @@ body {
   text-decoration: none;
   background-repeat: no-repeat;
   -webkit-transition: 0.2s color, 0.2s background-color, 0.2s border-color;
-  transition: 0.2s color, 0.2s background-color, 0.2s border-color
+  transition: 0.2s color, 0.2s background-color, 0.2s border-color;
 }
 
 .button:focus {
-    outline: var(--outline-width) solid var(--blue);
-    outline-offset: 0;
-  }
+  outline: var(--outline-width) solid var(--blue);
+  outline-offset: 0;
+}
 
 .button--large {
   padding: calc(var(--spacing-xs) + 2px) var(--spacing-l);
@@ -266,46 +266,24 @@ body {
 .button--primary {
   border-color: var(--brand-primary);
   background-color: var(--brand-primary);
-  color: var(--brand-reverse)
+  color: var(--brand-reverse);
 }
 
 .button--primary:hover {
-    background-color: var(--brand-reverse);
-    color: var(--brand-primary);
-  }
+  background-color: var(--brand-reverse);
+  color: var(--brand-primary);
+}
 
 .button--secondary {
   border-color: var(--brand-primary);
   background-color: var(--brand-reverse);
-  color: var(--brand-primary)
+  color: var(--brand-primary);
 }
 
 .button--secondary:hover {
-    background-color: var(--brand-primary);
-    color: var(--brand-reverse);
-  }
-
-.button--white {
-  border-color: var(--brand-reverse);
-  background-color: var(--brand-reverse);
-  color: var(--brand-primary)
+  background-color: var(--brand-primary);
+  color: var(--brand-reverse);
 }
-
-.button--white:hover {
-    background-color: transparent;
-    color: var(--brand-reverse);
-  }
-
-.button--reverse {
-  border-color: var(--brand-reverse);
-  background-color: transparent;
-  color: var(--brand-reverse)
-}
-
-.button--reverse:hover {
-    background-color: var(--brand-reverse);
-    color: var(--brand-primary);
-  }
 
 :root {
   --card-width: 300px;
@@ -316,16 +294,16 @@ body {
   width: 300px;
   width: var(--card-width);
   height: auto;
-  box-shadow: var(--box-shadow)
+  box-shadow: var(--box-shadow);
 }
 
-.card :first-child {
-    margin-top: 0;
-  }
+.card:first-child {
+  margin-top: 0;
+}
 
-.card :last-child {
-    margin-bottom: 0;
-  }
+.card:last-child {
+  margin-bottom: 0;
+}
 
 .card__content {
   position: relative;
