@@ -9,14 +9,14 @@
   width: var(--card-width);
   height: auto;
   box-shadow: var(--box-shadow);
+}
 
-  & :first-child {
-    margin-top: 0;
-  }
+.card:first-child {
+  margin-top: 0;
+}
 
-  & :last-child {
-    margin-bottom: 0;
-  }
+.card:last-child {
+  margin-bottom: 0;
 }
 
 .card__content {

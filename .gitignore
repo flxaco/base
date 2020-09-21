@@ -21,6 +21,7 @@ vendor
 yarn-error.log
 lerna-debug.log
 packages/*/package-lock.json
+.jest-test-results.json
 
 # Build files #
 ######################

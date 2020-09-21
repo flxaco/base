@@ -5,7 +5,7 @@ import './card.css';
 const Card = ({
   children, modifierClass, image, ...props
 }) => (
-  <div className={`card ${modifierClass}`} {...props}>
+  <div className={`card ${modifierClass}`} {...props} data-testid="card-test">
     {
       image
         ? (

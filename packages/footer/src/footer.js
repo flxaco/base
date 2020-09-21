@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Footer = ({ copyright }) => (
-  <section className="footer">
+  <section className="footer" data-testid="footer-test">
     &copy;
     {' '}
     {copyright}

@@ -8,10 +8,12 @@
     "@babel/register": "^7.5.5",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-jest": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.21",
     "babel-eslint": "^10.0.2",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^8.0.6",
     "browserslist": "^4.6.6",
     "copyfiles": "^2.1.1",
@@ -24,6 +26,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
     "http-server": "^0.12.3",
+    "jest": "^26.4.2",
     "lerna": "^3.15.0",
     "mini-css-extract-plugin": "^0.11.1",
     "nightwatch": "^1.1.13",
@@ -56,7 +59,8 @@
     "lint:css": "stylelint packages/*/src/**/*.css --custom-formatter=node_modules/stylelint-formatter-pretty",
     "lint:js": "eslint packages/*/src/**/*.js scripts/**/*.js -f pretty",
     "lint": "npm-run-all lint:*",
-    "test": "wait-on http://127.0.0.1:6006 -t 10000 && nightwatch",
+    "test": "jest",
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
     "create-package": "./scripts/create-package.sh",
     "link-packages": "./scripts/link-packages.sh",
     "clean-packages": "./scripts/clean-packages.sh",
@@ -68,8 +72,23 @@
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest-css-modules-processor": "0.0.9",
+    "jest-transform-css": "^2.0.0",
     "object-fit-images": "^3.2.4",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "react-test-renderer": "^16.13.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "jestCSSProcessor": {
+    "generateScopedName": "[name]__[local]___[hash:base64:5]"
   }
 }
