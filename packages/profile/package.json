@@ -1,6 +1,6 @@
 {
   "name": "@flxaco/profile",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Profile component, displays writer/user contact details and links.",
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@babel/cli": "^7.11.6",
-    "@flxaco/constants": "^0.0.10",
+    "@flxaco/constants": "^0.0.11",
     "prop-types": "^15.7.2",
     "react": "^16.13.1"
   },
