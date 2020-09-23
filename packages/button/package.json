@@ -1,6 +1,6 @@
 {
   "name": "@flxaco/button",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Button component provides postcss, jsx, and a Storybook example.",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "prepare": "rm -rf ./dist && npm run build"
   },
   "dependencies": {
-    "@flxaco/constants": "^0.0.12"
+    "@flxaco/constants": "^0.0.13"
   },
   "browserslist": "last 2 versions, > 0.25%, firefox esr, ie 11, not dead",
   "publishConfig": {
