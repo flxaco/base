@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Logo from '../../icons/flxa-coffee.svg';
 import './header.css';
 
-const Header = ({ name }) => (
+const Header = ({ name, children }) => (
   <header data-testid="header-test">
     <div className="wrapper">
       <div>
-        <img src={Logo} className="header__logo-icon" alt={name} />
+        {children}
         <h1>{name}</h1>
       </div>
     </div>
@@ -16,6 +15,11 @@ const Header = ({ name }) => (
 
 Header.propTypes = {
   name: PropTypes.string.isRequired,
+  children: PropTypes.node,
+};
+
+Header.defaultProps = {
+  children: null,
 };
 
 export default Header;
