@@ -1,6 +1,6 @@
 {
   "name": "@flxaco/card",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Card component provides postcss, jsx, and a Storybook example.",
   "repository": {
     "type": "git",

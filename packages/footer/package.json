@@ -1,6 +1,6 @@
 {
   "name": "@flxaco/footer",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Footer component, displays copyright.",
   "repository": {
     "type": "git",
