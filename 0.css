@@ -43,28 +43,21 @@
   padding: 20px 30px 20px 15px;
   border: 1px solid rgba(0,0,0,0.06275);
   border-radius: 5px;
-  -webkit-transition: background 150ms ease-out, border 150ms ease-out, -webkit-transform 150ms ease-out;
-  transition: background 150ms ease-out, border 150ms ease-out, -webkit-transform 150ms ease-out;
   transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
-  transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
   color: #333333;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 .link-item:hover {
   border-color: rgba(30,167,253,0.31373);
-  -webkit-transform: translate3d(0, -3px, 0);
-          transform: translate3d(0, -3px, 0);
+  transform: translate3d(0, -3px, 0);
   box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
 }
 
 .link-item:active {
   border-color: #1EA7FD;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .link-item strong {
@@ -77,8 +70,7 @@
   height: 40px;
   width: 40px;
   margin-right: 15px;
-  -webkit-box-flex: 0;
-          flex: none;
+  flex: none;
 }
 
 .link-item span {
@@ -238,7 +230,6 @@ body {
   line-height: 1.5;
   text-decoration: none;
   background-repeat: no-repeat;
-  -webkit-transition: 0.2s color, 0.2s background-color, 0.2s border-color;
   transition: 0.2s color, 0.2s background-color, 0.2s border-color;
 }
 
@@ -333,17 +324,14 @@ body {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
-svg {
-  display: inline-block;
-  vertical-align: top;
+.header__logo-icon {
+  width: 2rem;
+  height: 2rem;
 }
 
 h1 {
@@ -360,10 +348,8 @@ button + button {
 }
 
 .logo {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -375,24 +361,19 @@ button + button {
   color: black;
   text-decoration: none;
   box-shadow: var(--box-shadow);
-  -webkit-transition: -webkit-transform .25s ease;
-  transition: -webkit-transform .25s ease;
   transition: transform .25s ease;
-  transition: transform .25s ease, -webkit-transform .25s ease;
 }
 
 @media (min-width: 600px) {
   .logo {
     font-size: 1.5rem;
     padding: 1rem;
-    -webkit-transform: translate3d(0px, 30px, 0px) rotate(-10deg) skew(-10deg, 0deg);
-            transform: translate3d(0px, 30px, 0px) rotate(-10deg) skew(-10deg, 0deg);
+    transform: translate3d(0px, 30px, 0px) rotate(-10deg) skew(-10deg, 0deg);
   }
 }
 
 .logo:hover {
-  -webkit-transform: translate3d(0, 0, 0) rotate(0deg) skew(0deg, 0deg);
-          transform: translate3d(0, 0, 0) rotate(0deg) skew(0deg, 0deg);
+  transform: translate3d(0, 0, 0) rotate(0deg) skew(0deg, 0deg);
 }
 
 .logo svg {
@@ -416,7 +397,6 @@ button + button {
 }
 
 .tags h3 {
-  display: -webkit-box;
   display: flex;
   margin: 0;
 }
@@ -428,7 +408,6 @@ button + button {
 }
 
 .tags ul {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -456,7 +435,6 @@ button + button {
 }
 
 .post__title {
-  display: -webkit-box;
   display: flex;
   padding: 1rem 0;
   width: 100vw;
@@ -494,17 +472,13 @@ button + button {
 
 @media (min-width: 600px) {
   .post__content {
-    display: -webkit-box;
     display: flex;
   }
 }
 
 blockquote {
-  background-image: -webkit-gradient(linear, left top, right top, from(#E52E71), to(#FB8904));
   background-image: linear-gradient(90deg, #E52E71, #FB8904);
-  -webkit-transform: rotate(-2deg) skew(-2deg, 0deg);
-          transform: rotate(-2deg) skew(-2deg, 0deg);
-  background: -webkit-gradient(linear, left top, right top, from(#E52E71), to(#FB8904));
+  transform: rotate(-2deg) skew(-2deg, 0deg);
   background: linear-gradient(90deg, #E52E71, #FB8904);
   box-decoration-break: clone;
   -webkit-background-clip: text;
@@ -516,7 +490,6 @@ blockquote {
 }
 
 .date-box {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin-top: 1rem;
@@ -533,7 +506,6 @@ blockquote {
 
 @media (min-width: 600px) {
   .post-intro {
-    display: -webkit-box;
     display: flex;
   }
 
@@ -574,10 +546,8 @@ blockquote {
 
 @media (min-width: 600px) {
   .profile__list-container {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
 
@@ -595,10 +565,8 @@ blockquote {
 }
 
 .profile__list li {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: .5rem;
 }
 
