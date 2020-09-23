@@ -7,9 +7,9 @@
   justify-content: space-between;
 }
 
-svg {
-  display: inline-block;
-  vertical-align: top;
+.header__logo-icon {
+  width: 2rem;
+  height: 2rem;
 }
 
 h1 {
