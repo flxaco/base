@@ -41,7 +41,7 @@
     "postcss-preset-env": "^6.7.0",
     "react-is": "^16.13.1",
     "style-loader": "^1.2.1",
-    "stylelint": "^10.1.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-formatter-pretty": "^1.1.4",
     "svg-react-loader": "^0.4.6",
